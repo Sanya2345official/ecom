@@ -15,7 +15,7 @@ const Cart = () => {
             <div className="d-flex align-items-center">
               {/* Product Image */}
               <img
-                src={`http://localhost:5003${item.image}`}
+                src={`https://ecom-eaj8.onrender.com${item.image}`}
                 alt={item.name}
                 style={{ width: "100px", height: "100px", objectFit: "cover", marginRight: "20px" }}
                 className="rounded"

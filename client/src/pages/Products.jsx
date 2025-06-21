@@ -9,7 +9,7 @@ const Products = () => {
     const [showToast, setShowToast] = useState(false);
 
     useEffect(() => {
-        axios.get("http://localhost:5003/api/products").then((res) => {
+        axios.get("https://ecom-eaj8.onrender.com/api/products").then((res) => {
             setProducts(res.data);
         });
     }, []);
@@ -54,7 +54,7 @@ const Products = () => {
                     <div key={product._id} className="col-md-3 mb-4">
                         <div className="card h-100 shadow-sm">
                             <img
-                                src={`http://localhost:5003${product.image}`}
+                                src={`https://ecom-eaj8.onrender.com${product.image}`}
                                 className="card-img-top"
                                 alt={product.name}
                                 style={{ height: "200px", objectFit: "cover" }}
